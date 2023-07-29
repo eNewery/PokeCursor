@@ -1,0 +1,55 @@
+*{
+  cursor: none !important;
+}
+html, body{
+  height: 100%;
+  overflow: hidden;
+}
+.cardsContainer{
+width: 100%;
+height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cardCursor{
+  width: 256px;
+  height: 256px;
+  background-color: gray;
+border-radius: 50%;
+box-shadow: 0 0.1em 1em 0.2em red;
+display: flex;
+justify-content: center;
+align-items: center;
+transition:1s;
+}
+.cardCursor:hover{
+  transform: translateY(-0.5em);
+box-shadow: 0 0.5em 1em 0.5em red;
+
+transition:1s;
+}
+.backgroundSnorlax{
+  background: url(./assets/images/snorlax.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  }
+  .backgroundPikachu{
+  background: url(./assets/images/pikachu.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  }
+  .backgroundSquirtle{
+  background: url(./assets/images/squirtle.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  }
+  @media (max-width: 768px) {
+    .cardCursor{
+width: 128px;
+height: 128px;
+    }
+  }
